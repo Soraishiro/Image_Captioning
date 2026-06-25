@@ -1,6 +1,6 @@
 # image captioning
 
-An image captioning framework built on [GRIT](https://arxiv.org/abs/2207.09666) with two additional modules: **Residual Relation Memory (RRM)** for spatial-relational reasoning, and **Local Cultural Query Memory (LCQM)** for culturally-grounded concept learning.
+An image captioning framework built on [GRIT](https://doi.org/10.1007/978-3-031-20059-5_10) with two additional modules: **Residual Relation Memory (RRM)** for spatial-relational reasoning, and **Local Cultural Query Memory (LCQM)** for culturally-grounded concept learning.
 
 ## Project Structure
 

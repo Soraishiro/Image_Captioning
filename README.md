@@ -48,8 +48,8 @@ Implementation of **ViG** — a dual-enhancement framework adapting [GRIT](https
 ### Install
 
 ```shell
-git clone <repo-url>
-cd vig
+git clone https://github.com/Soraishiro/ViG.git
+cd ViG
 
 python -m venv venv
 source venv/bin/activate
@@ -65,13 +65,35 @@ cd ../..
 
 ### Checkpoints
 
-Download pretrained checkpoints and set environment variables:
+The checkpoints below were trained on **KTVIC** dataset. Set environment variable to use:
+
+```shell
+export KTVIC_CAPTION_CHECKPOINT=ckpts/full_vig.pth
+```
 
 | Checkpoint                     | Description                 | Link                  |
 | ------------------------------ | --------------------------- | --------------------- |
 | ViG full (RRM+LCQM, stop-grad) | Full ViG with stop-gradient | `ckpts/full_vig.pth`  |
 | ViG LCQM-only                  | ViG with LCQM only          | `ckpts/lcqm_only.pth` |
 | ViG RRM-only                   | ViG with RRM only           | `ckpts/rrm_only.pth`  |
+
+### Data Preparation
+
+Download and extract the image captioning dataset including train and test images with annotations. Expected directory structure:
+
+```
+path/to/dataset/
+├── train-images/         # training images
+├── public-test-images/   # test images
+├── train_data.json       # training annotations
+└── test_data.json        # test annotations
+```
+
+Set the path via environment variable:
+
+```shell
+export KTVIC_ROOT=/path/to/dataset
+```
 
 ### Training
 

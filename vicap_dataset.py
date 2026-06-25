@@ -19,7 +19,7 @@ RAW_CAPTION_FIELD = os.environ.get('KTVIC_RAW_CAPTION_FIELD', 'caption')
 TOKENIZER_BACKEND = os.environ.get('KTVIC_TOKENIZER_BACKEND', 'rdrsegmenter_segment_caption')
 
 def resolve_ktvic_paths(split_mode='full', dev_split='seed42_valid10'):
-    root = Path(os.environ.get('KTVIC_ROOT', str(DEFAULT_KTVIC_ROOT))).expanduser()
+    root = Path(os.environ.get('KTVIC_ROOT', '')).expanduser()
     train_image_path = Path(os.environ.get('KTVIC_TRAIN_IMAGES', str(root / 'train-images' / 'train-images'))).expanduser()
     test_image_path = Path(os.environ.get('KTVIC_TEST_IMAGES', str(root / 'public-test-images' / 'public-test-images'))).expanduser()
     _valid_default = str(train_image_path) if split_mode == 'dev_select' else str(test_image_path)

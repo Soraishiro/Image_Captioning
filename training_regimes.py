@@ -157,7 +157,7 @@ def _cmd_describe(args) -> int:
     return 0
 
 def main(argv: list[str] | None=None) -> int:
-    parser = argparse.ArgumentParser(description='GRIT/KTVIC training regime registry.')
+    parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest='command', required=True)
     launcher = subparsers.add_parser('launcher-overrides')
     launcher.add_argument('--profile', required=True)

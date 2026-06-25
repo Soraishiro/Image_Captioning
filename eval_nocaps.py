@@ -78,8 +78,6 @@ def main(gpu, config):
 def run_main(config: DictConfig) -> None:
     mp.spawn(main, nprocs=config.exp.ngpus_per_node, args=(config,))
 if __name__ == '__main__':
-    if os.environ['USER'] == 'quang':
-        os.environ['DATA_ROOT'] = '/home/quang/datasets/coco_caption'
     os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '6688'
     run_main()

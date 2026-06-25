@@ -69,9 +69,9 @@ Available pretrained checkpoints:
 
 | Model                | Link                   |
 | -------------------- | ---------------------- |
-| full model           | `ckpts/full_model.pth` |
-| model with RRM only  | `ckpts/rrm.pth`        |
-| model with LCQM only | `ckpts/lcqm.pth`       |
+| full model           | [`ckpts/full_model.pth`](https://drive.google.com/file/d/1-Xi6HZPCJ28Yeaii1SVwHfX-r9OwHO7-/view?usp=sharing) |
+| model with RRM only  | [`ckpts/rrm.pth`](https://drive.google.com/file/d/1FTUgGSUIeSpFwO-znj7ZuHsfAYkCiHJB/view?usp=sharing)        |
+| model with LCQM only | [`ckpts/lcqm.pth`](https://drive.google.com/file/d/1Gh8syW_XuoXKk9U-MTl_CAgrqxG2EuVp/view?usp=sharing)       |
 
 Set the path to use:
 
